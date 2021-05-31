@@ -5,7 +5,8 @@ MOUSEKEY_ENABLE = yes # Mouse keys
 EXTRAKEY_ENABLE = yes # Audio control and System control
 OLED_DRIVER_ENABLE = yes
 
-SRC += oled.c
+SRC += process_records.c \
+	   oled.c
 
 # select alternative base layer alphas
 ifneq ($(strip $(MIRYOKU_ALPHAS)),)
